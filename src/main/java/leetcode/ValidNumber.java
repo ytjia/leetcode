@@ -10,6 +10,7 @@ public class ValidNumber {
 
     public boolean isNumber(String s) {
       char[] normalChar = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'e' };
+      return true;
     }
   }
 
