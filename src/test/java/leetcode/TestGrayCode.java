@@ -20,7 +20,7 @@ public class TestGrayCode {
     t1.add(1);
     t1.add(3);
     t1.add(2);
-    assertEquals(t1, s.grayCode(2));
+    assertEquals(t1, s.grayCode2(2));
   }
 
 }

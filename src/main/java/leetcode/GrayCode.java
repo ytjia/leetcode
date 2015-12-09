@@ -45,5 +45,26 @@ public class GrayCode {
 
       return list;
     }
+
+    public List<Integer> grayCode2(int n) {
+      List<Integer> list = new ArrayList<Integer>();
+
+      if (n < 0) {
+        return list;
+      }
+      if (n == 0) {
+        list.add(0);
+        return list;
+      }
+      list.add(0);
+      list.add(1);
+      for (int i = 2; i <= n; i++) {
+        for (int j = list.size() - 1; j >= 0; j--) {
+          list.add(list.get(j) + (1 << (i - 1)));
+        }
+      }
+
+      return list;
+    }
   }
 }
