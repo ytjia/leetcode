@@ -1,9 +1,10 @@
 package leetcode;
 
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by ytjia on 15/8/14.
