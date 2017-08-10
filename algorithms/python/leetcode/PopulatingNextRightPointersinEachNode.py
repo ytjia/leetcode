@@ -1,14 +1,14 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
 Given a binary tree
-Populate each next pointer to point to its next right node. 
+Populate each next pointer to point to its next right node.
 If there is no next right node, the next pointer should be set to NULL.
 Initially, all next pointers are set to NULL.
 Note:
 You may only use constant extra space.
-You may assume that it is a perfect binary tree (ie, all leaves are at the 
+You may assume that it is a perfect binary tree (ie, all leaves are at the
 same level, and every parent has two children).
 https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/
 """
@@ -51,8 +51,8 @@ class Solution:
                 queue[i].next = None
             i += 1
             # TODO
-        
- 
+
+
 if __name__ == '__main__':
     n1 = TreeNode(1)
     n2 = TreeNode(2)
@@ -67,4 +67,4 @@ if __name__ == '__main__':
         n4
         ]
     for t in test_case:
-        print Solution().preorderTraversal(t)
+        print(Solution().preorderTraversal(t))

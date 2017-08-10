@@ -1,8 +1,8 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
-Given a collection of candidate numbers (C) and a target number (T), 
+Given a collection of candidate numbers (C) and a target number (T),
 find all unique combinations in C where the candidate numbers sums to T.
 Each number in C may only be used once in the combination.
 http://oj.leetcode.com/problems/combination-sum-ii/
@@ -30,7 +30,7 @@ class Solution:
             for i in range(0, len(item)):
                 combination += item[i] * [candi_sorted[i]]
             solution_set.append(combination)
-        return solution_set 
+        return solution_set
 
     def findCombination(self, candi_sorted, candi_dict, tar):
         result = []
@@ -42,9 +42,9 @@ class Solution:
             if cur_tar == 0:
                 result.append([k])
             elif cur_tar < 0:
-                pass 
+                pass
             elif len(candi_sorted) > 1:
-                extra = self.findCombination(candi_sorted[1:], candi_dict, cur_tar) 
+                extra = self.findCombination(candi_sorted[1:], candi_dict, cur_tar)
                 # print extra # for test
                 if extra == -1:
                     pass
@@ -60,7 +60,7 @@ class Solution:
 
 if __name__ == '__main__':
     test_case = [
-    [[1, 1, 2, 2, 4, 7, 9], 8], 
+    [[1, 1, 2, 2, 4, 7, 9], 8],
     [[10, 1, 2,7,6,1,5], 8],
     [[10, 11, 12], 8]
     # [[2, 4, 5, 6, 7, 11], 11]
@@ -68,4 +68,4 @@ if __name__ == '__main__':
     for t in test_case:
         candi, targ = t
         combi = Solution().combinationSum2(candi, targ)
-        print combi
+        print(combi)

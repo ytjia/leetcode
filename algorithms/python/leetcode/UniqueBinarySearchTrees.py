@@ -1,8 +1,8 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
-Given n, how many structurally unique BST's (binary search trees) 
+Given n, how many structurally unique BST's (binary search trees)
 that store values 1...n?
 https://oj.leetcode.com/problems/unique-binary-search-trees/
 """
@@ -18,7 +18,7 @@ class Solution:
                 result += self.numTrees(i) * self.numTrees(n-i-1)
                 i += 1
             return result
- 
+
 if __name__ == '__main__':
     test_case = [
         0,
@@ -29,4 +29,4 @@ if __name__ == '__main__':
         5
         ]
     for t in test_case:
-        print Solution().numTrees(t)
+        print(Solution().numTrees(t))

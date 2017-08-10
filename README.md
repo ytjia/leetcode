@@ -1,2 +1,3 @@
-# coding-practice
-coding practice
+# My Leetcode Solution
+
+https://leetcode.com/

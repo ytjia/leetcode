@@ -1,9 +1,9 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
 Given two binary trees, write a function to check if they are equal or not.
-Two binary trees are considered equal if they are structurally identical 
+Two binary trees are considered equal if they are structurally identical
 and the nodes have the same value.
 https://oj.leetcode.com/problems/same-tree/
 """
@@ -44,4 +44,4 @@ if __name__ == '__main__':
         [r3, r4]
         ]
     for t in test_case:
-        print Solution().isSameTree(t[0], t[1])
+        print(Solution().isSameTree(t[0], t[1]))

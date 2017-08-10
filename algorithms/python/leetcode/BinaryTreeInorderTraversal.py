@@ -1,4 +1,4 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
@@ -25,7 +25,7 @@ class Solution:
             result.append(root.val)
             result += self.inorderTraversal(root.right)
             return result
- 
+
 if __name__ == '__main__':
     n1 = TreeNode(1)
     n2 = TreeNode(2)
@@ -40,4 +40,4 @@ if __name__ == '__main__':
         n4
         ]
     for t in test_case:
-        print Solution().inorderTraversal(t)
+        print(Solution().inorderTraversal(t))

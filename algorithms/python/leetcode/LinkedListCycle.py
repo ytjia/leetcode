@@ -1,4 +1,4 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
@@ -31,7 +31,7 @@ class Solution:
                 else:
                     pass
             return False
- 
+
 if __name__ == '__main__':
     l1 = ListNode(1)
     l2 = ListNode(2)
@@ -45,4 +45,4 @@ if __name__ == '__main__':
         l4
         ]
     for t in test_case:
-        print Solution().hasCycle(t)
+        print(Solution().hasCycle(t))

@@ -1,11 +1,11 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
-Given an array of integers, every element appears twice except for one. 
+Given an array of integers, every element appears twice except for one.
 Find that single one.
 Note:
-Your algorithm should have a linear runtime complexity. 
+Your algorithm should have a linear runtime complexity.
 Could you implement it without using extra memory?
 https://oj.leetcode.com/problems/single-number/
 """
@@ -26,4 +26,4 @@ if __name__ == '__main__':
         ]
     for t in test_case:
         ta = Solution().singleNumber(t)
-        print ta
+        print(ta)

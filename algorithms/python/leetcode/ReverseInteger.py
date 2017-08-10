@@ -1,4 +1,4 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
@@ -32,4 +32,4 @@ if __name__ == '__main__':
         ]
     for test_s in test_case:
         subs = Solution().reverse(test_s)
-        print subs
+        print(subs)

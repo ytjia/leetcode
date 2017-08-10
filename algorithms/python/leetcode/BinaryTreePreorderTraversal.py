@@ -1,4 +1,4 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
@@ -25,7 +25,7 @@ class Solution:
             result += self.preorderTraversal(root.left)
             result += self.preorderTraversal(root.right)
             return result
- 
+
 if __name__ == '__main__':
     n1 = TreeNode(1)
     n2 = TreeNode(2)
@@ -40,4 +40,4 @@ if __name__ == '__main__':
         n4
         ]
     for t in test_case:
-        print Solution().preorderTraversal(t)
+        print(Solution().preorderTraversal(t))

@@ -1,9 +1,9 @@
-#!/usr/bin python       
+#!/usr/bin python
 # -*- coding: utf-8 -*-
 
 """
 Given a binary tree, find its maximum depth.
-The maximum depth is the number of nodes along the longest path 
+The maximum depth is the number of nodes along the longest path
 from the root node down to the farthest leaf node.
 https://oj.leetcode.com/problems/maximum-depth-of-binary-tree/
 """
@@ -44,4 +44,4 @@ if __name__ == '__main__':
         ]
     for test_s in test_case:
         subs = Solution().maxDepth(test_s)
-        print subs
+        print(subs)
