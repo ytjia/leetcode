@@ -5,6 +5,7 @@
 
 import unittest
 
+from common.BinaryTree import BinaryTree
 from .. import BinaryTreeZigzagLevelOrderTraversal
 
 
@@ -25,7 +26,7 @@ class test_BinaryTreeZigzagLevelOrderTraversal(unittest.TestCase):
         self.assertEqual(self.solution.zigzagLevelOrder(A), [[3], [20, 9], [15, 7]])
         self.assertEqual(self.solution.zigzagLevelOrder(None), [])
 
-        root = self.solution.create_tree([1, 2, 3, 4, 'null', 'null', 5])[0]
+        root = BinaryTree.create_tree([1, 2, 3, 4, 'null', 'null', 5])[0]
         self.assertEqual(self.solution.zigzagLevelOrder(root), [[1], [3, 2], [4, 5]])
 
 
