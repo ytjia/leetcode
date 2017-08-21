@@ -21,3 +21,11 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        # C^m_m+n
+        num = 1
+        den = 1
+        for i in range(m + n - 2, n - 1, -1):
+            num *= i
+        for i in range(m - 1, 0, -1):
+            den *= i
+        return num / den
