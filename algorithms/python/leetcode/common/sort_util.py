@@ -2,25 +2,33 @@
 
 # Authors: Y. Jia <ytjia.zju@gmail.com>
 
-import copy
 
 
-def binary_search(arr, target, arr_sorted=False):
-    c_arr = copy.copy(arr)
-    if not arr_sorted:
-        c_arr.sort()
-    lens = len(arr)
-    if lens == 0:
-        return False
-    elif lens == 1:
-        return arr[0] == target
-    i = 0
-    j = lens
+def binary_search(arr, target, begin=None, end=None):
+    """
 
-    mid = i + (j - i) / 2
+    :param arr:
+    :param target:
+    :param begin:
+    :param end:
+    :return:
+    """
+    if begin is None:
+        begin = 0
+    if end is None:
+        end = len(arr) - 1
+    if end < begin or end < 0:
+        return False, None
+    elif end == begin:
+        if arr[end] == target:
+            return True, end
+        else:
+            return False, None
+
+    mid = begin + (end - begin) / 2
     if arr[mid] == target:
-        return True
+        return True, mid
     elif arr[mid] < target:
-        return binary_search(arr[mid + 1:], target, arr_sorted)
+        return binary_search(arr, target, mid + 1, end)
     else:
-        return binary_search(arr[:mid], target, arr_sorted)
+        return binary_search(arr, target, begin, mid - 1)
