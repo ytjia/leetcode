@@ -4,12 +4,13 @@
 
 import unittest
 
+from common.BinaryTree import BinaryTree
 from .. import BinaryTreeMaximumPathSum
 
-from common.BinaryTree import BinaryTree
 
 class test_BinaryTreeMaximumPathSum(unittest.TestCase):
     solution = BinaryTreeMaximumPathSum.Solution()
+
     def test_maxPathSum(self):
         self.assertEqual(self.solution.maxPathSum(BinaryTree.create_tree([1, 2, 3])[0]), 6)
 
