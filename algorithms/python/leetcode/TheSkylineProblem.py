@@ -6,6 +6,8 @@
 https://leetcode.com/problems/the-skyline-problem/description/
 """
 
+from heapq import heappop, heappush
+
 
 class Hist(object):
     def __init__(self, h):
@@ -22,8 +24,31 @@ class Hist(object):
 
 
 class Solution(object):
-    # TODO: AC，but there's too much lines. to opt
     def getSkyline(self, buildings):
+        """
+        :type buildings: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        skyline = [[-1, 0]]
+        critical_points = set([b[0] for b in buildings] + [b[1] for b in buildings])
+        live_bs = list()
+
+        i = 0
+        for point in sorted(critical_points):
+            while i < len(buildings) and buildings[i][0] <= point:
+                heappush(live_bs, (-buildings[i][2], buildings[i][1]))
+                i += 1
+
+            while live_bs and live_bs[0][1] <= point:
+                heappop(live_bs)
+
+            max_h = -live_bs[0][0] if live_bs else 0
+            if max_h != skyline[-1][1]:
+                skyline.append([point, max_h])
+
+        return skyline[1:]
+
+    def getSkyline2(self, buildings):
         """
         :type buildings: List[List[int]]
         :rtype: List[List[int]]
