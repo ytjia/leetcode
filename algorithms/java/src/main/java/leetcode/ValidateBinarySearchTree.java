@@ -3,7 +3,7 @@ package leetcode;
 import leetcode.common.TreeNode;
 
 /**
- * @author jiayitian created on 2017-09-08 17:31
+ * @author ytjia created on 2017-09-08 17:31
  */
 public class ValidateBinarySearchTree {
 

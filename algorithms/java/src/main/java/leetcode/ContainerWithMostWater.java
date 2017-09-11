@@ -1,7 +1,7 @@
 package leetcode;
 
 /**
- * @author jiayitian created on 2017-09-08 16:26
+ * @author ytjia created on 2017-09-08 16:26
  */
 public class ContainerWithMostWater {
 

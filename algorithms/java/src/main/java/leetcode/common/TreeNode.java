@@ -3,7 +3,7 @@ package leetcode.common;
 /**
  * Definition for a binary tree node.
  *
- * @author jiayitian created on 2017-09-08 18:12
+ * @author ytjia created on 2017-09-08 18:12
  */
 public class TreeNode {
 

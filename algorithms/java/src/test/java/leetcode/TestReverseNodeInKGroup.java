@@ -32,7 +32,6 @@ public class TestReverseNodeInKGroup {
 //    System.out.println(c.next.val);
 
     s.reverseKGroup(a, 1);
-    System.out.println(a.next.val);
     System.out.println(b.next.val);
     System.out.println(c.next.val);
     System.out.println(d.next.val);
