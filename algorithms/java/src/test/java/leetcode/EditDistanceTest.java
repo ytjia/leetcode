@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by ytjia on 16/1/12.
  */
-public class TestEditDistance {
+public class EditDistanceTest {
 
   @Test
   public void editDistance() {

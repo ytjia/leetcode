@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by ytjia on 15/8/14.
  */
-public class TestGrayCode {
+public class GrayCodeTest {
 
   @Test
   public void grayCode() {

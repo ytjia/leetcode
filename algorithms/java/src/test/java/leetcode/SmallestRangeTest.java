@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * @author ytjia created on 2017-09-10 17:30
  */
-public class TestSmallestRange {
+public class SmallestRangeTest {
 
   private SmallestRange.Solution solution;
 

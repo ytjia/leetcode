@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * @author ytjia created on 2017-09-10 20:25
  */
-public class TestPerfectSquares {
+public class PerfectSquaresTest {
 
   PerfectSquares.Solution solution;
   @Before

@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * @author ytjia created on 2017-09-10 19:22
  */
-public class TestMaximumProductSubarray {
+public class MaximumProductSubarrayTest {
 
   MaximumProductSubarray.Solution solution;
   @Before

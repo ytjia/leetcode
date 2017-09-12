@@ -9,7 +9,7 @@ import leetcode.common.TreeNode;
 /**
  * @author ytjia created on 2017-09-08 18:00
  */
-public class TestContainerWithMostWater {
+public class ContainerWithMostWaterTest {
 
   @Test
   public void isValidBST() {

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by ytjia on 15/8/12.
  */
-public class TestFactorialTrailingZeros {
+public class FactorialTrailingZerosTest {
 
   @Test
   public void trailingZeroes() {

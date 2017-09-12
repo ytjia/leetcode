@@ -9,7 +9,7 @@ import leetcode.common.TreeNode;
 /**
  * @author ytjia created on 2017-09-11 11:54
  */
-public class TestSerializeandDeserializeBinaryTree {
+public class SerializeandDeserializeBinaryTreeTest {
 
   private SerializeandDeserializeBinaryTree.Codec codec;
   TreeNode root = new TreeNode(1);

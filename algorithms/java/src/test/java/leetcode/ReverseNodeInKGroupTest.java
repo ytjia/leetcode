@@ -8,7 +8,7 @@ import leetcode.ReverseNodesInKGroup.Solution;
 /**
  * Created by ytjia on 15/12/28.
  */
-public class TestReverseNodeInKGroup {
+public class ReverseNodeInKGroupTest {
 
   @Test
   public void reverseNodeInKGroup() {
