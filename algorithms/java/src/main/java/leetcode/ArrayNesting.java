@@ -19,8 +19,28 @@ public class ArrayNesting {
   class Solution {
 
     public int arrayNesting(int[] nums) {
+      if (nums == null || nums.length == 0) {
+        return 0;
+      }
+      int numsLens = nums.length;
+      int maxSetSize = 0;
+      int curSetSize;
+      int[] visited = new int[numsLens];
+      for (int i = 0; i < numsLens; i++) {
+        if (visited[i] == 0) {
+          curSetSize = 0;
+          int next = i;
+          while (visited[next] == 0) {
+            visited[next] = 1;
+            next = nums[next];
+            curSetSize++;
+          }
+          maxSetSize = Math.max(maxSetSize, curSetSize);
+        }
+      }
 
+      return maxSetSize;
     }
-  }
 
+  }
 }
