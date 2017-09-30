@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +19,7 @@ public class RemoveInvalidParentheses {
   class Solution {
 
     public List<String> removeInvalidParentheses(String s) {
-
+      return new ArrayList<>();
     }
   }
 
