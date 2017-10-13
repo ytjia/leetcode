@@ -15,7 +15,21 @@ public class JumpGame {
   class Solution {
 
     public boolean canJump(int[] nums) {
+      if (null == nums || nums.length == 0) {
+        return true;
+      }
 
+      int maxJumpIndex = nums[0];
+      int i = 0;
+
+      while (i <= maxJumpIndex) {
+        maxJumpIndex = Math.max(maxJumpIndex, i + nums[i]);
+        if (maxJumpIndex >= nums.length - 1) {
+          return true;
+        }
+        ++i;
+      }
+      return false;
     }
   }
 
